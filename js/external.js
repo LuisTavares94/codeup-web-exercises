@@ -40,9 +40,9 @@ alert("it is " + canAttend + " that you can attend.")
 
 alert('Need to check promotion offer eligibility')
 
-var minimumPurchase = confirm('Two or more items?')
+var minimumPurchase = prompt('How many items are you purchasing?')
 var notExpired = confirm('Confirm that the product offer has not expired')
 var premiumMember = confirm("Are you a Premium Member")
-var eligibleProductOffer = (minimumPurchase && notExpired) || premiumMember
+var eligibleProductOffer = (minimumPurchase > 2 && notExpired) || premiumMember
 
 alert("it is " + eligibleProductOffer + " that you are eligible for the product offer.")
