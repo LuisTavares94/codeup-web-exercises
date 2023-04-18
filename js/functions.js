@@ -9,10 +9,9 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
     function sayHello(name){
-        console.log("Hello, " + name)
-
+        return "Hello, " + name
     }
-sayHello("Luis")
+
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -20,10 +19,10 @@ sayHello("Luis")
  *
  * console.log 'helloMessage' to check your work
  */
-    var helloMessage = function(sayHello) {
-        console.log(helloMessage);
-    }
-    sayHello("Luis.")
+    var helloMessage = sayHello("Luis")
+
+    console.log(helloMessage);
+
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
@@ -31,7 +30,7 @@ sayHello("Luis")
  * console.
  */
     var myName = 'Luis.'
-    console.log(sayHello(myName))
+    console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -56,9 +55,9 @@ sayHello("Luis")
  */
 
     function isTwo(x) {
-        return confirm(x >= 2)
-        isTwo(random)
+        return confirm(x === 2)
     }
+
     console.log(isTwo(random))
 /**
  * TODO:
@@ -72,9 +71,12 @@ sayHello("Luis")
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
     function calculateTip(x, y) {
-    return (x * y)
+    return (x + y)
     }
+
     console.log(calculateTip(.2, 20))
+    console.log(calculateTip(.25, 25.50))
+    console.log(calculateTip(.15, 33.42))
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -104,7 +106,9 @@ sayHello("Luis")
     function applyDiscount(originalPrice, discountPercent) {
         var discountPrice = (originalPrice * discountPercent)
         var newTotal =(originalPrice - discountPrice)
+        return newTotal
 
-        console.log(newTotal)
     }
-    applyDiscount(100, .1)
+        var originalPrice = 100
+        var discountPercent = .2
+        console.log(applyDiscount(originalPrice, discountPercent))
