@@ -150,15 +150,15 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
-
-var totalBill = prompt("What it your total bill?")
-
-alert(calculateTip(luckyNumber, totalBill));
-
-alert("Your lucky number was " + luckyNumber + ". The price before discount was $" + totalBill + ". Your total amount due after discount is $" + calculateTotal(luckyNumber,totalBill));
-
+// Generate a random number between 0 and 6
+// var luckyNumber = Math.floor(Math.random() * 6);
+//
+// var totalBill = prompt("What it your total bill?")
+//
+// alert(calculateTip(luckyNumber, totalBill));
+//
+// alert("Your lucky number was " + luckyNumber + ". The price before discount was $" + totalBill + ". Your total amount due after discount is $" + calculateTotal(luckyNumber,totalBill));
+//
 
 /**
  * TODO:
