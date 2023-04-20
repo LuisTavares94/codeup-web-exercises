@@ -12,6 +12,7 @@
         return "Hello, " + name
     }
 
+console.log(sayHello(Luis));
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -71,7 +72,7 @@
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
     function calculateTip(x, y) {
-    return (x + y)
+    return (x * y)
     }
 
     console.log(calculateTip(.2, 20))
