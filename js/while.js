@@ -1,22 +1,36 @@
 "use strict";
 
-for (let i = 2; i <= 65536; i *= 2) {
-    console.log(i)
+(function() {
+
+    let x= 2
+while(x <= 65536) {
+    console.log(x);
+    x *= 2;
 }
 
-// 2
-// 4
-// 8
-// 16
-// 32
-// 64
-// 128
-// 256
-// 512
-// 1024
-// 2048
-// 4096
-// 8192
-// 16384
-// 32768
-// 65536
+    let allCones = Math.floor(Math.random() * 50) + 50;
+    let remainingInventory = allCones
+
+    do {
+        let conesToSell = Math.floor(Math.random() * 5) + 1;
+        if (remainingInventory >= conesToSell) {
+            remainingInventory -= conesToSell;
+            console.log(`Started the day with ${allCones} ice cream cones. Customer will purchase ${conesToSell} cones. Only ${remainingInventory} left.`);
+        } else {
+            console.log(`Sorry I don't have ${conesToSell} cones.We only have ${remainingInventory} cones left.`);
+            }
+    } while(remainingInventory > 0)
+
+    // let allCones = Math.floor(Math.random() * 51) + 50;
+    // let remainingInventory = allCones
+    //
+    // do {
+    //     let conesToSell = Math.floor(Math.random() * 5) + 1;
+    //     if (remainingInventory >= conesToSell) {
+    //         remainingInventory -= conesToSell;
+    //         console.log(`Started the day with ${allCones} ice cream cones. Customer is purchasing ${conesToSell} cones. Only ${remainingInventory} left!`);
+    //     } else {
+    //         console.log(`Sorry! I cannot sell ${conesToSell} cones. We only have ${remainingInventory} left!`);
+    //     }
+    // } while (remainingInventory !== 0)
+})();
