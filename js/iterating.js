@@ -61,14 +61,14 @@ console.log(Array.isArray(names))
 
     let numbers = ['1', '2', '3', '4', '5']
     function first(arr) {
-        return arr[numbers.length - 5];
+        return arr[0];
     }
 
     console.log(first(numbers));
 
 
     function second(arr) {
-        return arr[numbers.length - 4];
+        return arr[1];
     }
 
     console.log(second(numbers));
