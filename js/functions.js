@@ -19,8 +19,8 @@ function sayHello(name) {
  *
  * console.log 'helloMessage' to check your work
  */
-var helloMessage = sayHello("Luis")
 
+let helloMessage = sayHello('Luis')
 console.log(helloMessage);
 
 /**
@@ -88,7 +88,7 @@ console.log(calculateTip(.15, 33.42))
 var billTotal = prompt("Please enter total bill.")
 var tipAmount = prompt("Please enter the percentage you would like to tip in a number from 0 to 1.")
 var tipTotal = calculateTip(billTotal, tipAmount)
-alert(tipTotal)
+alert(`Please tip $${tipTotal}`)
 
 /**
  * TODO:
@@ -105,14 +105,14 @@ alert(tipTotal)
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-var originalPrice = 100;
-var discountPercent = .2;
-
-function applyDiscount(originalPrice, discountPercent) {
-    return price - calculateTip(originalPrice,discountPercent)
-    var newTotal = (originalPrice - discountPrice)
-    return newTotal
-
-}
-
-console.log(applyDiscount(originalPrice, discountPercent))
+// var originalPrice = 100;
+// var discountPercent = .2;
+//
+// function applyDiscount(originalPrice, discountPercent) {
+//     return price - calculateTip(originalPrice,discountPercent)
+//     var newTotal = (originalPrice - discountPrice)
+//     return newTotal
+//
+// }
+//
+// console.log(applyDiscount(originalPrice, discountPercent))

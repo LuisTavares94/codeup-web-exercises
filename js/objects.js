@@ -1,4 +1,4 @@
-(function() {
+(function () {
     "use strict";
 
     /**
@@ -27,8 +27,8 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    person.sayHello = function (sayHello) {
-    return  ('Hello from ' + person.first_name + " " + person.last_name);
+    person.sayHello = function () {
+        return ('Hello from ' + person.first_name + " " + person.last_name);
     };
     console.log(person.sayHello());
 
@@ -51,6 +51,22 @@
     //     {name: 'Ryan', amount: 250},
     //     {name: 'George', amount: 320}
     // ];
+    //
+    // let discount = .12;
+    //
+    // shoppers.pop("new_total");
+    //
+    // shoppers.applyDiscount = function () {
+    //     for(let i = 1; i <= 10; i++) {
+    //         console.log(`${num} X ${i} = ${num * i}`);
+    //     if (shoppers.amount > 200) {
+    //          shoppers.new_total = ((shoppers.amount) * discount)
+    //     }
+    // }
+    // for
+    // more than $200= %12 discount use conditionals that log ryan, cameron, and george need to pay
+    // cam = 180$, ryan 250, george 320
+    // display a line with name of person, amount before discount, discount, aamount after
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -64,6 +80,40 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    let books = [
+        {
+            title: "A Confederacy of Dunces.",
+            author: {
+                first_name: "John Kennedy",
+                last_name: "Toole"
+            },
+        },{
+            title: "Harry Potter and the Sorceror's Stone.",
+            author: {
+                first_name: "J.K",
+                last_name: "Rowling",
+            },
+        },{
+            title: "Harry Potter and the Chamber of Secrets.",
+            author: {
+                first_name: "J.K",
+                last_name: "Rowling",            },
+        },{
+            title: "Harry Potter and the Prisoner of Azkaban.",
+            author: {
+                first_name: "J.K",
+                last_name: "Rowling",
+            },
+        },{
+            title: "Harry Potter and the Goblet of Fire.",
+            author: {
+                first_name: "J.K",
+                last_name: "Rowling",            },
+        }
+    ]
+
+    console.log(books[1].author.first_name)
 
     /**
      * TODO:
@@ -90,6 +140,11 @@
      *      ...
      */
 
+    books.forEach(function(createBook) {
+    return ("Book #" + (index + 1) + "Title:" + books.title + "Author" + books.author)
+    })
+    console.log(createBook);
+    console.log(createBook.books);
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
