@@ -71,24 +71,24 @@
 //     return 7;
 // }
 
-function findFactors(num) {
-    if(typeof num === "number" && !isNaN(num)) {
-    let factors = [];
-    for (let i = 1; i <= num; i++) {
-        if (num % i === 0) {
-            factors.push(i);
-        }
-    }
-    return factors;
-}
-console.log(findFactors(6))
-console.log(findFactors(16)); // returns [1,2,4,8,16];
-console.log(findFactors(0)); // returns [];
-console.log(findFactors(true));; // returns false;
-console.log(findFactors("13"));; // returns false;
-console.log(findFactors([54, 72, 144]));; // returns false;
-console.log(findFactors({value: 64}));; // returns false;
-console.log(findFactors());; // returns false;
+// function findFactors(num) {
+//     if(typeof num === "number" && !isNaN(num)) {
+//     let factors = [];
+//     for (let i = 1; i <= num; i++) {
+//         if (num % i === 0) {
+//             factors.push(i);
+//         }
+//     }
+//     return factors;
+// }
+// console.log(findFactors(6))
+// console.log(findFactors(16)); // returns [1,2,4,8,16];
+// console.log(findFactors(0)); // returns [];
+// console.log(findFactors(true));; // returns false;
+// console.log(findFactors("13"));; // returns false;
+// console.log(findFactors([54, 72, 144]));; // returns false;
+// console.log(findFactors({value: 64}));; // returns false;
+// console.log(findFactors());; // returns false;
 
 
 // findFactors(6); // returns [1,2,3,6];
@@ -99,3 +99,37 @@ console.log(findFactors());; // returns false;
 // findFactors([54,72,144]); // returns false;
 // findFactors({value: 64}); // returns false;
 // findFactors(); // returns false;
+
+// Write a function that takes in a string and counts the instances of the letter 'e' within the argument.
+// The count should be case insensitive. If the string does not contain any 'e's it should return 0.
+// If the argument is not a string it should return false.
+
+// function eCount(value) {
+//      value === value.toLowerCase();
+//     if (typeof value !== String) {
+//         return false;
+//     } if (value.toLowerCase())
+// }
+
+function countEs(str) {
+    if (typeof str !== 'string') {
+        return false;
+    } str = str.toLowerCase();
+
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === 'e') {
+            count++;
+        }
+    }
+
+    return count;
+}
+console.log(countEs("Ease")); // returns 2;
+console.log(countEs("teleconference")); // returns 5;
+console.log(countEs("TOM")); // returns 0;
+console.log(countEs(true)); // returns false;
+console.log(countEs(['e', 'E'])); // returns false;
+console.log(countEs()); // returns false;
+
