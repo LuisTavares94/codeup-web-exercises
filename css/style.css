@@ -2,3 +2,24 @@
     color: purple;
     text-decoration: underline;
 }
+
+h1.fancy-header {
+    text-align: Center;
+}
+
+h2.fancy-header {
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+body {
+    background-color: darkgoldenrod;
+    background-image: url("../img/office-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style: square;
+}
