@@ -1,0 +1,65 @@
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+    font-size: 16px;
+    /*display: block;*/
+}
+
+.message-info {
+    padding: 1em;
+    /*margin: .5em 0;*/
+    background-color: #cddeff;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    /*color: #cddeff;*/
+    /*filter: brightness(0.8);*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.message-success {
+    padding: 1em;
+    background-color: #cff3da;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    /*color: #cff3da;*/
+    /*filter: brightness(0.8);*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.message-warning {
+    padding: 1em;
+    /*margin: .5em 0;*/
+    background-color: #fcfbc9;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    /*color: #fcfbc9;*/
+    /*filter: brightness(0.8);*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.message-error {
+    padding: 1em;
+    /*margin: .5em 0;*/
+    background-color: #fad3d7;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    /*color: #fad3d7;*/
+    /*filter: brightness(0.8);*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}

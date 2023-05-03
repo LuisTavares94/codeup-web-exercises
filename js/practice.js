@@ -105,21 +105,21 @@
 // If the argument is not a string it should return false.
 
 
-// function countEs(str) {
-//     if (typeof str !== 'string') {
-//         return false;
-//     } str = str.toLowerCase();
-//
-//     let count = 0;
-//
-//     for (let i = 0; i < str.length; i++) {
-//         if (str[i] === 'e') {
-//             count++;
-//         }
-//     }
-//
-//     return count;
-// }
+function countEs(str) {
+    if (typeof str !== 'string') {
+        return false;
+    } str = str.toLowerCase();
+
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === 'e') {
+            count++;
+        }
+    }
+
+    return count;
+}
 // console.log(countEs("Ease")); // returns 2;
 // console.log(countEs("teleconference")); // returns 5;
 // console.log(countEs("TOM")); // returns 0;
@@ -132,17 +132,25 @@
 // This should be case-insensitive. If the argument is not a string, or if the argument does not contain 'e' it should return false.
 
 
+// function trueE(str) {
+//     if (typeof str !== 'string') {
+//         return false;
+//     }
+//
+//     str = str.toLowerCase();
+//
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === 'e') {
+//             return true;
+//         }
+//     }
+// }
+
 function trueE(str) {
-    if (typeof str !== 'string') {
+    if (countEs(str) === false) {
         return false;
-    }
-
-    str = str.toLowerCase();
-
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === 'e') {
-            return true;
-        }
+    } else {
+        return countEs(str) > 0;
     }
 }
 
