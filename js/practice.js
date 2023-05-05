@@ -105,21 +105,21 @@
 // If the argument is not a string it should return false.
 
 
-function countEs(str) {
-    if (typeof str !== 'string') {
-        return false;
-    } str = str.toLowerCase();
-
-    let count = 0;
-
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === 'e') {
-            count++;
-        }
-    }
-
-    return count;
-}
+// function countEs(str) {
+//     if (typeof str !== 'string') {
+//         return false;
+//     } str = str.toLowerCase();
+//
+//     let count = 0;
+//
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === 'e') {
+//             count++;
+//         }
+//     }
+//
+//     return count;
+// }
 // console.log(countEs("Ease")); // returns 2;
 // console.log(countEs("teleconference")); // returns 5;
 // console.log(countEs("TOM")); // returns 0;
@@ -146,14 +146,57 @@ function countEs(str) {
 //     }
 // }
 
-function trueE(str) {
-    if (countEs(str) === false) {
-        return false;
-    } else {
-        return countEs(str) > 0;
-    }
-}
+// function trueE(str) {
+//     if (countEs(str) === false) {
+//         return false;
+//     } else {
+//         return countEs(str) > 0;
+//     }
+// }
+//
+// console.log(trueE('hi'));
+// console.log(trueE('elephant'));
+// console.log(trueE('when'));
 
-console.log(trueE('hi'));
-console.log(trueE('elephant'));
-console.log(trueE('when'));
+// Write a function named fizzBuzz that prints to the console the number 1 - 100.
+// If the number is divisible by 3 print fizz instead of the number. If the number is divisible by 5 print buzz.
+// If the number is divisible by both 3 and 5 print fizzBuzz.
+
+// function fizzbuzz(x) {
+//     for (let i =1; i < 100; i++); {
+//     if (i % 3 === 0) {
+//         console.log('fizz');
+//     } else if (i % 5 === 0) {
+//         console.log('buzz')
+//     } else if (i % 3 === 0 && i % 5 === 0) {
+//         console.log('fizzbuzz')
+//         }
+//         console.log(i);
+//         }
+//     }
+//
+// }
+
+// Warmup:
+//     Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
+//     2
+// 4
+// 16
+// 256
+// 65536
+
+// var i = 2;
+//
+// do {
+//     console.log(i * i);
+//     i++;
+// } while (i < 1000000);
+
+let num = 2;
+
+do {
+    console.log(num);
+    num = num * num;
+} while (num < 1000000);
+
+
