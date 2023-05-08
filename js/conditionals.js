@@ -21,19 +21,19 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-    // function analyzeColor(color) {
-    //
-    //     if (color === 'blue') {
-    //         return"Blue is the color of the sky.";
-    //     } else if (color === 'red') {
-    //         return"Strawberries are red";
-    //     } else {
-    //         return"I don't know anything about " + color;
-    //     }}
-    //
-    // console.log(analyzeColor('green'))
-    // console.log(analyzeColor('blue'))
-    // console.log(analyzeColor('red'))
+    function analyzeColor(color) {
+
+        if (color === 'blue') {
+            return"Blue is the color of the sky.";
+        } else if (color === 'red') {
+            return"Strawberries are red";
+        } else {
+            return"I don't know anything about " + color;
+        }}
+
+    console.log(analyzeColor('green'))
+    console.log(analyzeColor('blue'))
+    console.log(analyzeColor('red'))
 
 
 
@@ -51,24 +51,24 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-     //console.log(analyzeColor(randomColor))
+     console.log(analyzeColor(randomColor))
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-    // var colorPreference = prompt('What is your favorite color?');
-    //
-    // switch(colorPreference) {
-    //     case 'blue' :
-    //         alert('blue is the color of the sky.');
-    //         break;
-    //     case 'red' :
-    //         alert('red is the color of strawberries.');
-    //         break;
-    //     default :
-    //         alert('I don\'t know anything about ' + colorPreference);
-    //         break;
-    // }
+    var colorPreference = prompt('What is your favorite color?');
+
+    switch(colorPreference) {
+        case 'blue' :
+            alert('blue is the color of the sky.');
+            break;
+        case 'red' :
+            alert('red is the color of strawberries.');
+            break;
+        default :
+            alert('I don\'t know anything about ' + colorPreference);
+            break;
+    }
 
 /**
  * TODO:
@@ -76,19 +76,19 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-    //
-    // var colorPreference = prompt('What is your favorite color?')
-    // function analyzeColor(color) {
-    //
-    //     if (color === 'blue') {
-    //         alert("Blue is the color of the sky.") ;
-    //     } else if (color === 'red') {
-    //         alert("Strawberries are red");
-    //     } else {
-    //         alert(("I don't know anything about ") + color);
-    //     }}
-    //
-    // console.log((analyzeColor(colorPreference)));
+
+    var colorPreference = prompt('What is your favorite color?')
+    function analyzeColor(color) {
+
+        if (color === 'blue') {
+            alert("Blue is the color of the sky.") ;
+        } else if (color === 'red') {
+            alert("Strawberries are red");
+        } else {
+            alert(("I don't know anything about ") + color);
+        }}
+
+    console.log((analyzeColor(colorPreference)));
 
 /* ########################################################################## */
 
@@ -113,27 +113,27 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 
-//     function calculateTotal(luckyNumber, total) {
-//
-//         if (luckyNumber === 0){
-//             return total;
-//         } else if (luckyNumber === 1){
-//             return total - (total * .1);
-//         } else if (luckyNumber === 2) {
-//             return total - (total * .25);
-//         } else if (luckyNumber === 3){
-//             return total - (total * .35);
-//         } else if (luckyNumber === 4) {
-//             return total - (total * .5);
-//         } else if (luckyNumber === 5) {
-//             return 0;
-//         }
-//     }
-//
-// console.log(calculateTotal(0, 100)); // returns 100
-// console.log(calculateTotal(4, 100)); // returns 50
-// console.log(calculateTotal(5, 100));
-// // returns 0
+    function calculateTotal(luckyNumber, total) {
+
+        if (luckyNumber === 0){
+            return total;
+        } else if (luckyNumber === 1){
+            return total - (total * .1);
+        } else if (luckyNumber === 2) {
+            return total - (total * .25);
+        } else if (luckyNumber === 3){
+            return total - (total * .35);
+        } else if (luckyNumber === 4) {
+            return total - (total * .5);
+        } else if (luckyNumber === 5) {
+            return 0;
+        }
+    }
+
+console.log(calculateTotal(0, 100)); // returns 100
+console.log(calculateTotal(4, 100)); // returns 50
+console.log(calculateTotal(5, 100));
+// returns 0
 
 
 
@@ -150,15 +150,15 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
-//
-// var totalBill = prompt("What it your total bill?")
-//
-// alert(calculateTip(luckyNumber, totalBill));
-//
-// alert("Your lucky number was " + luckyNumber + ". The price before discount was $" + totalBill + ". Your total amount due after discount is $" + calculateTotal(luckyNumber,totalBill));
-//
+Generate a random number between 0 and 6
+var luckyNumber = Math.floor(Math.random() * 6);
+
+var totalBill = prompt("What it your total bill?")
+
+alert(calculateTip(luckyNumber, totalBill));
+
+alert("Your lucky number was " + luckyNumber + ". The price before discount was $" + totalBill + ". Your total amount due after discount is $" + calculateTotal(luckyNumber,totalBill));
+
 
 /**
  * TODO:
@@ -187,12 +187,10 @@ function numberInfo() {
 
         if (!isNaN(userInput)) {
             if (userInput % 2 === 0) {
-                alert("The number " + userInput + " is even");
+                alert(`The number ${userInput}  is even`);
             } else {
-                // alert("The number " + userInput + " is odd");
                 alert(`The number ${userInput}  is odd`);
             }
-
             alert("The number plus 100 = " + (parseInt(userInput) + 100));
 
             if (userInput >= 0) {

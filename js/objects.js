@@ -46,27 +46,23 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-    //
-    // let discount = .12;
-    //
-    // shoppers.pop("new_total");
-    //
-    // shoppers.applyDiscount = function () {
-    //     for(let i = 1; i <= 10; i++) {
-    //         console.log(`${num} X ${i} = ${num * i}`);
-    //     if (shoppers.amount > 200) {
-    //          shoppers.new_total = ((shoppers.amount) * discount)
-    //     }
-    // }
-    // for
-    // more than $200= %12 discount use conditionals that log ryan, cameron, and george need to pay
-    // cam = 180$, ryan 250, george 320
-    // display a line with name of person, amount before discount, discount, aamount after
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(function(shopper){
+        console.log(shopper.name);
+        if(shopper.amount > 200){
+            console.log("Amount before discount $" + shopper.amount);
+            var discountAmt = shopper.amount * .12
+            console.log("Amount of discount $" + discountAmt.toFixed(2));
+            console.log("Amount after discount $" + (shopper.amount - (discountAmt)));
+        } else {
+            console.log("No discount, amount due $" + shopper.amount);
+        }
+    });
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -140,11 +136,11 @@
      *      ...
      */
 
-    books.forEach(function(createBook) {
-    return ("Book #" + (index + 1) + "Title:" + books.title + "Author" + books.author)
-    })
-    console.log(createBook);
-    console.log(createBook.books);
+    // books.forEach(function(createBook) {
+    // return ("Book #" + (index + 1) + "Title:" + books.title + "Author" + books.author)
+    // })
+    // console.log(createBook);
+    // console.log(createBook.books);
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -155,5 +151,28 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook(title, firstName, lastName){
+        let bookObject = {
+            title: title,
+            author: {
+                firstName: firstName,
+                lastName: lastName
+            }
+        }
+        books.push(bookObject);
+    }
+
+    createBook("The Two Towers", "John","Tolkien");
+
+    function showBookInfo(book){
+        return "Title: " + book.title + "\n" + "Author " + book.author.firstName + " " + book.author.lastName;
+    }
+
+
+
+    books.forEach(function(book,index){
+        console.log("Book # " + (index + 1) + "\n" + showBookInfo(book))
+    })
 
 })();

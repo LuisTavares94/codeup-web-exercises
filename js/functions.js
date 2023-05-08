@@ -54,11 +54,13 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-function isTwo(x) {
-    return confirm(x === 2)
+function isTwo(number) {
+    return (number === 2)
 }
 
-console.log(isTwo(random))
+console.log(random);
+
+console.log(isTwo(random));
 
 /**
  * TODO:
@@ -86,7 +88,7 @@ console.log(calculateTip(.15, 33.42))
  */
 
 var billTotal = prompt("Please enter total bill.")
-var tipAmount = prompt("Please enter the percentage you would like to tip in a number from 0 to 1.")
+var tipAmount = prompt("Please enter the percentage you would like to tip.")
 var tipTotal = calculateTip(billTotal, tipAmount)
 alert(`Please tip $${tipTotal}`)
 
@@ -111,14 +113,3 @@ function applyDiscount(originalPrice, discountPercentage) {
 
 console.log(applyDiscount(45.99, .12));
 
-// var originalPrice = 100;
-// var discountPercent = .2;
-//
-// function applyDiscount(originalPrice, discountPercent) {
-//     return price - calculateTip(originalPrice,discountPercent)
-//     var newTotal = (originalPrice - discountPrice)
-//     return newTotal
-//
-// }
-//
-// console.log(applyDiscount(originalPrice, discountPercent))
