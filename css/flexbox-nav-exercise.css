@@ -2,3 +2,67 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
+
+nav {
+    background-color: hsl(0deg 0% 75.69%);
+    color: black;
+    text-decoration: none;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+
+.logo-link, a {
+    font-weight: bold;
+}
+
+
+a:hover {
+    color:blue;
+}
+
+
+.logo-link {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    padding: .2em 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+a {
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+.nav-left{
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+.nav-right {
+    margin-left: auto;
+}
+
