@@ -1,0 +1,279 @@
+@media screen and (max-width: 767px) {
+    .circle-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .circle-container .col-6.col-sm-6.col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+
+    .card-container .col-12,
+    .card-container .col-md-6 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+        max-width: 768px;
+    }
+
+    .circle-container .col-6.col-sm-6.col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+
+    .card-container .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-container .col-12,
+    .card-container .col-md-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+}
+
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 6px solid white;
+    font-size: 14px;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    margin: 10px;
+}
+
+@media (max-width: 767px) {
+    .small-hr {
+        display: none;
+    }
+}
+
+
+.red-circle {
+    background-color: #E6563B;
+    color: #FFFFFF;
+}
+
+.orange-circle {
+    background-color: #EB9D3A;
+    color: #FFFFFF;
+}
+
+.green-circle {
+    background-color: #7CB06C;
+    color: #FFFFFF;
+}
+
+.turquoise-circle {
+    background-color: #00ABA9;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+h1,
+h4 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h6 {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+.small-hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.project-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.project-info p {
+    margin-bottom: 0;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0;
+}
+
+.icons-container .icon {
+    margin-left: 10px;
+}
+
+
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-size: 4px;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+}
+.icon p {
+    margin: 0;
+    line-height: 1;
+}
+
+.red-icon {
+    background-color: #E6563B;
+    color: black;
+    font-size: 12px;
+
+}
+
+.orange-icon {
+    background-color: #EB9D3A;
+    color: black;
+    font-size: 12px;
+}
+
+.green-icon {
+    background-color: #7CB06C;
+    color: black;
+    font-size: 12px;
+}
+
+.turquoise-icon {
+    background-color: #00ABA9;
+    color: black;
+    font-size: 12px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 991px) {
+    .brand-text {
+        display: none;
+    }
+    .last-container {
+        display:none;
+    }
+}
+
+.brand-text {
+    font-family: 'Abel', sans-serif;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .card-container .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-container .col-12,
+    .card-container .col-md-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+.small-images {
+    border: .2em solid #e6e6e6;
+    border-radius: 1px;
+    background-size: cover;
+}
+
+.sub-title {
+    text-align: center;
+    margin-top: 5em;
+}
+
+img {
+    width: 80px;
+    height: auto;
+}
+
+@media screen and (max-width: 991px) {
+    .admin-container {
+        display: none;
+    }
+    .last-container
+}
+
+.admin-container .col-9 {
+    font-family: 'Anton', sans-serif;
+    font-size: 26px;
+}
+
+.admin-container p {
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+}
